@@ -9,6 +9,7 @@ import urllib.request
 
 import re 
 
+textfile= open("readme2.txt","w")
   
 # Assign urlopen to a file object variable 
 
@@ -40,4 +41,7 @@ for line in fhand:
 
     # printing the list output 
 
-    print(reg) 
+    print(reg)
+    for element in reg:
+     textfile.write(element + "\n")
+textfile.close()
